@@ -9,18 +9,18 @@ part of 'details_store.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$DetailsStore on _DetailsStoreBase, Store {
-  final _$valueAtom = Atom(name: '_DetailsStoreBase.value');
+  final _$quantidadeAtom = Atom(name: '_DetailsStoreBase.quantidade');
 
   @override
-  int get value {
-    _$valueAtom.reportRead();
-    return super.value;
+  int get quantidade {
+    _$quantidadeAtom.reportRead();
+    return super.quantidade;
   }
 
   @override
-  set value(int value) {
-    _$valueAtom.reportWrite(value, super.value, () {
-      super.value = value;
+  set quantidade(int value) {
+    _$quantidadeAtom.reportWrite(value, super.quantidade, () {
+      super.quantidade = value;
     });
   }
 
@@ -28,11 +28,22 @@ mixin _$DetailsStore on _DetailsStoreBase, Store {
       ActionController(name: '_DetailsStoreBase');
 
   @override
-  void increment() {
+  void incrementQuantidade() {
     final _$actionInfo = _$_DetailsStoreBaseActionController.startAction(
-        name: '_DetailsStoreBase.increment');
+        name: '_DetailsStoreBase.incrementQuantidade');
     try {
-      return super.increment();
+      return super.incrementQuantidade();
+    } finally {
+      _$_DetailsStoreBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void decrementQuantidade() {
+    final _$actionInfo = _$_DetailsStoreBaseActionController.startAction(
+        name: '_DetailsStoreBase.decrementQuantidade');
+    try {
+      return super.decrementQuantidade();
     } finally {
       _$_DetailsStoreBaseActionController.endAction(_$actionInfo);
     }
@@ -41,7 +52,7 @@ mixin _$DetailsStore on _DetailsStoreBase, Store {
   @override
   String toString() {
     return '''
-value: ${value}
+quantidade: ${quantidade}
     ''';
   }
 }
