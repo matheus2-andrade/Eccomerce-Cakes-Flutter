@@ -71,7 +71,8 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
                   itemBuilder: (BuildContext context, int index) {
                     return GestureDetector(
                       onTap: () {
-                        Modular.to.pushNamed("/details");
+                        Modular.to.pushNamed("/details",
+                            arguments: {"cake": cakes[index]});
                       },
                       child: ItemCard(cake: cakes[index]),
                     );
