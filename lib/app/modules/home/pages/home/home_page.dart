@@ -70,7 +70,9 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
                   physics: const BouncingScrollPhysics(),
                   itemBuilder: (BuildContext context, int index) {
                     return GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Modular.to.pushNamed("/details");
+                      },
                       child: ItemCard(cake: cakes[index]),
                     );
                   },
