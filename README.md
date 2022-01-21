@@ -1,16 +1,14 @@
-# saborosa_app
+# Confectionary app
 
 A new Flutter project.
 
-## Getting Started
+I developed this bakery application with the objective of better fixing the modular structure that I've been studying, I also focused on state management using Mobx and Slidy's CLI.
 
-This project is a starting point for a Flutter application.
+The result of this turned out to be quite beautiful, since as the theme of the app, I decided to make this project of a small E-Commerce of a fictional bakery.
 
-A few resources to get you started if this is your first Flutter project:
+App developed with Flutter.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## I Used:
+ - Mobx
+ - Flutter Modular
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
